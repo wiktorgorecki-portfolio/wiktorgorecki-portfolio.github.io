@@ -26,8 +26,8 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">O mnie</a></li>
-							<li class="active"><a href="generic.html">Moje certyfikaty</a></li>
-							<li><a href="projekty.html#">Moje projekty</a></li>
+							<li><a href="generic.html">Moje certyfikaty</a></li>
+							<li class="active"><a href="projekty.html#">Moje projekty</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -60,20 +60,19 @@
 										<div style="height: 4rem;"><h3>Organizator: CKZiU Warszawa</h3></div>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Kurs ten dał mi umiejętność komunikacji z osobami niesłyszącymi. Słyszeć słyszący słyszeć słysząca słyszeć słyszące. Dziecko to małe głuche, dziecko to trochę większe głuche, dzieci głuche (to jedno mniejsze, to drugie większe) drugi wariant dziecko to małe głuche, dziecko to trochę większe głuche, dzieci głuche (to jedno mniejsze, to drugie większe)</p>
+									<p>Kurs ten dał mi umiejętność komunikacji z osobami niesłyszącymi.</p>
 								</article>
 								<article>
 									<header>
-										<span class="date">Czerwiec 2021</span>
-										<div style="height: 6rem;"><h2><a href="#">CCNA2v6<br /></a></h2></div>
-										<div style="height: 4rem;"><h3>Organizator: Cisco</h3>
+										<span class="date">Czerwiec 2022</span>
+										<div style="height: 6rem;"><h2><a href="https://pl.wikipedia.org/wiki/Bogosort">Algorytm sortowania bogosort<br /></a></h2></div>
 									</header>
-									<a href="certificates/CCNA2.jpg" class="image fit"><img src="certificates/CCNA2.jpg" alt="" /></a>
-									<p>Ten kurs koncentruje się na technologiach przełączania i operacjach routerów, które obsługują małe i średnie sieci biznesowe, w tym bezprzewodowe sieci lokalne (WLAN) i koncepcje bezpieczeństwa.</p>
+									<p>Algorytm ten losuje kolejność elementów w tablicy, a następnie sprawdza, czy tablica jest posortowana, jeżeli tak, to zwraca tablicę, a w przeciwnym wypadku powtarza poprzednie czynności.</p>
+									<a class="button primary" onclick="toggleDiv()" id="toggleButton">Pokaż</a>
+									<div style="height:10px;"></div>
+									<div id="toggleDiv" style="display:none;"><a class="image fit"><pre><code style="text-align:left;">import random<br>n=int(input("Length of a table: "))<br>i=0<br>table = []<br>while(i&lt;n):<br>	table.append(random.randint(0,9))<br>	i+=1<br>print(table)<br>print("Sort: ")<br>def isInOrder(table):<br>	flag = 0<br>	temp = 1<br>	while temp &lt; n:<br>		if (table[temp] &lt; table[temp - 1]):<br>			flag = 1<br>		temp += 1<br>	if (not flag):<br>		return True<br>	return False<br><br>iteration=0<br>while True:<br>	if isInOrder(table):<br>		break<br>	else:<br>		iteration += 1<br>		random.shuffle(table)<br>		print(iteration)<br>		print(table)</code></pre></a></div>
 								</article>
 							</section>
-
-
 					</div>
 
 				<!-- Footer -->
@@ -106,6 +105,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/moje.js"></script>
 	</body>
 </html>
